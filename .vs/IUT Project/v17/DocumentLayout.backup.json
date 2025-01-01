@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\assets\\but project\\scripts\\[starter]\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\kilia\\documents\\tom\\iut project\\assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimationSimple.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "ToolTip": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T12:08:51.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAApwJMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:52:58.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
