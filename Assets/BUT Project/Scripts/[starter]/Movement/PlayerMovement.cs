@@ -33,7 +33,6 @@ namespace BUT
             {
                 if (m_IsMoving == value) return;
                 m_IsMoving = value;
-                Debug.Log($"OnMovingChange déclenché en 2 avec : {m_IsMoving}");
 
                 OnMovingChange?.Invoke(m_IsMoving, m_IsGrounded);
             }
@@ -69,7 +68,6 @@ namespace BUT
             {
                 if (IsGrounded == value) return;
                 m_IsGrounded = value;
-                Debug.Log("call OnGroundedChange" + m_IsGrounded + " : " + m_IsGrounded);
                 OnGroundedChange?.Invoke(m_IsMoving, m_IsGrounded);
             }
             get => m_IsGrounded;

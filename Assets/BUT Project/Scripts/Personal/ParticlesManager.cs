@@ -11,14 +11,12 @@ public class ParticlesManager : MonoBehaviour
     {
         if (moving && grounded)
         {
-            Debug.Log("GO PARTICLES");
             footstepParticles.Play();
         }
         else
         {
             footstepParticles.Stop();
             footstepParticles.Clear();
-            Debug.Log("STOP PARTICLES");
         }
     }
 }

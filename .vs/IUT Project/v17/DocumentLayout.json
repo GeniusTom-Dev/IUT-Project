@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
               "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
               "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T20:53:21.917Z",
               "EditorCaption": ""
@@ -53,9 +53,10 @@
               "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAowNYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T10:52:58.766Z"
+              "WhenOpened": "2024-12-24T10:52:58.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,9 +66,10 @@
               "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
               "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
               "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T20:15:42.335Z"
+              "WhenOpened": "2025-01-02T20:15:42.335Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
