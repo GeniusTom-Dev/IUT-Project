@@ -11,24 +11,10 @@ namespace BUT
         [SerializeField]
         float m_SpeedMultiplier;
 
-        [Header("Audio")]
-        public AudioSource audioSource;
-        public AudioClip walkClip;
-        public AudioClip jumpClip;
 
-        public void Moving(bool moving)
+        public void Moving(bool moving, bool _)
         {
             m_Animator?.SetBool("Move", moving);
-            if (moving)
-            {
-                audioSource.clip = walkClip;
-                audioSource.loop = true; // Boucle le son pour une marche continue
-                audioSource.Play();
-            }
-            else
-            {
-                audioSource.Stop();
-            }
         }
 
         public void ChangeSpeed(float speed)
@@ -36,7 +22,7 @@ namespace BUT
             m_Animator?.SetFloat("Speed", speed * m_SpeedMultiplier);
         }
 
-        public void ChangeGrounded(bool grounded)
+        public void ChangeGrounded(bool _, bool grounded)
         {
             m_Animator?.SetBool("IsGrounded", grounded);
         }
@@ -44,7 +30,6 @@ namespace BUT
         public void Die()
         {
             m_Animator?.SetTrigger("Die");
-
         }
     }
 }

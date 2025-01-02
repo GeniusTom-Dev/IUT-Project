@@ -63,11 +63,13 @@
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Movement\PlayerMovement.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Animation\AnimationSimple.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Movement\Movement.cs" />
+    <Compile Include="Assets\BUT Project\Scripts\Personal\ParticlesManager.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Movement\CameraMovementOrbital.cs" />
+    <Compile Include="Assets\BUT Project\Scripts\Personal\SoundManager.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Behaviour\CenterSetter.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Behaviour\LookAtObj.cs" />
     <Compile Include="Assets\BUT Project\Scripts\[starter]\Behaviour\LockCursor.cs" />
-    <Compile Include="Assets\BUT Project\Scripts\Personal\DebugActionMap.cs" />
+    <Compile Include="Assets\BUT Project\Scripts\Personal\PlayerInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

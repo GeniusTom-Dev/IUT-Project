@@ -65,5 +65,5 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_GravityMultiplier: 1
   m_JumpPower: 5
-  m_MaxJumpNumber: 90
+  m_MaxJumpNumber: 2
   m_MinimazeJumpPower: 0

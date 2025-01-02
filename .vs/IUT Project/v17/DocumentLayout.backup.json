@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\",
+  "WorkspaceRootPath": "C:\\Users\\tomev\\Unity\\IUT Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\assets\\but project\\scripts\\[starter]\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\scripts\\personal\\teleporteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\teleporteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\scripts\\[starter]\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\kilia\\documents\\tom\\iut project\\assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\particlesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\particlesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,33 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnimationSimple.cs",
-              "DocumentMoniker": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
-              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
-              "ToolTip": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
-              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Teleporteur.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Teleporteur.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\Teleporteur.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Teleporteur.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\Teleporteur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:08:51.333Z",
+              "WhenOpened": "2025-01-02T20:45:48.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\kilia\\Documents\\Tom\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\PlayerMovement.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAApwJMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAowNYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T10:52:58.766Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParticlesManager.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\ParticlesManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T20:15:42.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnimationSimple.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T12:08:51.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\SoundManager.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\SoundManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:25:56.657Z"
             }
           ]
         }

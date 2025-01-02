@@ -35,7 +35,7 @@ namespace BUT
                 m_IsMoving = value;
                 Debug.Log($"OnMovingChange déclenché en 2 avec : {m_IsMoving}");
 
-                OnMovingChange?.Invoke(m_IsMoving);
+                OnMovingChange?.Invoke(m_IsMoving, m_IsGrounded);
             }
             get => m_IsMoving;
         }
@@ -69,7 +69,8 @@ namespace BUT
             {
                 if (IsGrounded == value) return;
                 m_IsGrounded = value;
-                OnGroundedChange?.Invoke(m_IsGrounded);
+                Debug.Log("call OnGroundedChange" + m_IsGrounded + " : " + m_IsGrounded);
+                OnGroundedChange?.Invoke(m_IsMoving, m_IsGrounded);
             }
             get => m_IsGrounded;
         }
@@ -79,30 +80,31 @@ namespace BUT
         private Vector3 m_MovementDirection;
 
         public UnityEvent<float> OnSpeedChange;
-        public UnityEvent<bool> OnMovingChange;
-        public UnityEvent<bool> OnGroundedChange;
+        public UnityEvent<bool, bool> OnMovingChange;
+        public UnityEvent<bool, bool> OnGroundedChange;
+        public UnityEvent OnJump;
 
         private void Awake()
         {
             m_CharacterController = GetComponent<CharacterController>();
         }
 
-        public void MovingChanged(bool _moving)
-        {
-            Debug.Log($"OnMovingChange déclenché avec : {_moving}");
+        //public void MovingChanged(bool _moving, bool _grounded)
+        //{
+        //    Debug.Log($"OnMovingChange déclenché avec : {_moving}");
 
-            OnMovingChange?.Invoke(_moving);
-        }
+        //    OnMovingChange?.Invoke(_moving, _grounded);
+        //}
 
-        public void SpeedChanged(float _speed)
-        {
-            OnSpeedChange?.Invoke(_speed);
-        }
+        //public void SpeedChanged(float _speed)
+        //{
+        //    OnSpeedChange?.Invoke(_speed);
+        //}
 
-        public void GroundedChanged(bool _grounded)
-        {
-            OnGroundedChange?.Invoke(_grounded);
-        }
+        //public void GroundedChanged(bool _grounded)
+        //{
+        //    OnGroundedChange?.Invoke(_grounded);
+        //}
 
         private void OnDisable()
         {
@@ -150,6 +152,7 @@ namespace BUT
             if (!_context.started || (!m_CharacterController.isGrounded && JumpNumber >= m_Movement.MaxJumpNumber)) return;
             if (JumpNumber == 0) StartCoroutine(WaitForLanding());
             JumpNumber++;
+            OnJump.Invoke();
 
             if (m_Movement.MinimazeJumpPower) GravityVelocity += m_Movement.JumpPower / JumpNumber;
             else GravityVelocity += m_Movement.JumpPower;
