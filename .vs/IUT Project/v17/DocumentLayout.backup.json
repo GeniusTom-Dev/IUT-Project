@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\tomev\\Unity\\IUT Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\a bouger\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\a bouger\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\scripts\\personal\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\bossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\bossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\[starter]\\movement\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\movement\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\animation\\animationsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\[starter]\\watercube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\[starter]\\watercube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +51,112 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\a bouger\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\a bouger\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\a bouger\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\a bouger\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T16:04:09.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BossManager.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\BossManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\BossManager.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\BossManager.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\BossManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T14:03:50.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\Movement.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Movement\\Movement.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Movement\\Movement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T10:51:05.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Piece.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Piece.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\Piece.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Piece.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\Piece.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T10:06:58.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WaterCube.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\WaterCube.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\WaterCube.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\WaterCube.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\WaterCube.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwF4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T09:46:07.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:30:33.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyManager.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\EnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\EnemyManager.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\EnemyManager.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\EnemyManager.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:37:08.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
+              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
+              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T22:38:00.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AnimationSimple.cs",
               "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
               "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
               "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
               "RelativeToolTip": "Assets\\BUT Project\\Scripts\\[starter]\\Animation\\AnimationSimple.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T22:22:53.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T22:22:53.357Z"
             }
           ]
         }

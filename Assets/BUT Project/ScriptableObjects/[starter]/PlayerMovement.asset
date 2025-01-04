@@ -37,7 +37,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_SprintFactor: 1.5
+  m_SprintFactor: 2
   m_MaxAngularSpeed: 360
   m_AngularSpeedFactor:
     serializedVersion: 2
