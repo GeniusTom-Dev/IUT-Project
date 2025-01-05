@@ -708,9 +708,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1911254434540895215, guid: 87cd0e4ee84b18546adf3876d1a0dc40, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 889882384}
-    - targetCorrespondingSourceObject: {fileID: 1911254434540895215, guid: 87cd0e4ee84b18546adf3876d1a0dc40, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 889882388}
   m_SourcePrefab: {fileID: 100100000, guid: 87cd0e4ee84b18546adf3876d1a0dc40, type: 3}
 --- !u!1 &460182327
@@ -6131,19 +6128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8580502051827972788, guid: 87cd0e4ee84b18546adf3876d1a0dc40, type: 3}
   m_PrefabInstance: {fileID: 451280379}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &889882384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889882382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5262c03a6dc9d1c4abe7bb267fc739dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inBossWall: {fileID: 0}
 --- !u!65 &889882388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8180,7 +8164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8760aab1ffdece44eb3d783f3ada255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interfaceObject: {fileID: 76503453}
 --- !u!1001 &1474983979
 PrefabInstance:
   m_ObjectHideFlags: 0

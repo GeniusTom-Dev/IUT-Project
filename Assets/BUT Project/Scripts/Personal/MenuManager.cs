@@ -9,8 +9,6 @@ using UnityEngine.EventSystems;
 public class MenuManager : MonoBehaviour
 {
 
-    public GameObject interfaceObject;
-
     void Update()
     {
         if (SceneManager.GetActiveScene().name != "Game" && Input.GetKeyDown(KeyCode.Space))
@@ -40,7 +38,6 @@ public class MenuManager : MonoBehaviour
             Time.timeScale = 0f; // Arrête le temps
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            interfaceObject?.SetActive(false);
         }
 
         SceneManager.LoadScene(_sceneName, LoadSceneMode.Additive);
@@ -53,7 +50,6 @@ public class MenuManager : MonoBehaviour
             Time.timeScale = 1f;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Confined;
-            interfaceObject?.SetActive(true);
         }
         SceneManager.UnloadSceneAsync(_sceneName);
     }

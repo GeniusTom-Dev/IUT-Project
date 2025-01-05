@@ -1,5 +1,13 @@
 sceneSetups:
-- path: Assets/Scenes/Game.unity
+- path: Assets/Scenes/DeathMenu.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/WinMenu.unity
+  isLoaded: 1
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/PauseMenu.unity
+  isLoaded: 1
+  isActive: 0
   isSubScene: 0

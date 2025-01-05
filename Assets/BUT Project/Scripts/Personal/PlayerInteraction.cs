@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using BUT;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -49,7 +51,6 @@ public class PlayerInteraction : MonoBehaviour
     private bool teleporterLock = true;
     private Vector3 trophyTargetPosition;
 
-    private bool isGamePaused = false;
     private MenuManager menuManager;
     private SoundManager soundManager;
 
@@ -79,9 +80,8 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isGamePaused = !isGamePaused;
 
-            if (isGamePaused)
+            if (SceneManager.GetSceneByName("PauseMenu").isLoaded == false)
             {
                 menuManager.LoadSceneAdditively("PauseMenu");
             }
@@ -152,6 +152,9 @@ public class PlayerInteraction : MonoBehaviour
             if (key.activeSelf)
             {
                 key.SetActive(false);
+                GameObject keyInterface = GameObject.Find("itemSlot2");
+                GameObject selectedChildKey = keyInterface.transform.Find("Selected")?.gameObject;
+                selectedChildKey?.SetActive(false);
             }
 
             GameObject selectedChild = swordInterface.transform.Find("Selected")?.gameObject;
@@ -172,6 +175,9 @@ public class PlayerInteraction : MonoBehaviour
             if (sword.activeSelf)
             {
                 sword.SetActive(false);
+                GameObject swordInterface = GameObject.Find("itemSlot1");
+                GameObject selectedChildSword = swordInterface.transform.Find("Selected")?.gameObject;
+                selectedChildSword?.SetActive(false);
             }
 
             GameObject selectedChild = keyInterface.transform.Find("Selected")?.gameObject;
