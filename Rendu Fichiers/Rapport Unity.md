@@ -1,6 +1,3 @@
-Voici le texte transformé en Markdown :
-
-```markdown
 # POLYUP
 
 ## 1. Introduction
@@ -38,4 +35,3 @@ Le jeu final propose une expérience où le joueur doit grimper sans tomber, ré
 - [https://free3d.com](https://free3d.com) pour des modèles libres de droits dont certains qu'on a modifié.  
 - [https://polyhaven.com](https://polyhaven.com) pour la texture des briques.  
 - [https://pixabay.com/fr/sound-effects/](https://pixabay.com/fr/sound-effects/) pour les sons inclus dans le jeu.
-```
