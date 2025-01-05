@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticlesManager : MonoBehaviour
 {
-    [Header("Particles Système")]
+    [Header("Particles System")]
     public ParticleSystem footstepParticles;
 
     public void Moving(bool moving, bool grounded)

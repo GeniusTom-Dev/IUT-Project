@@ -1,3 +1,4 @@
+using BUT;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,16 +22,34 @@ public class EnemieManager : MonoBehaviour
 
     private float nextAttackTime = 0f;
 
+    public GameObject platform; // La plateforme sur laquelle se trouve l'ennemi
+    private Collider platformCollider;
+
+    private SoundManager soundManager;
+
     private void Awake()
     {
         player = GameObject.Find("Player");
         playerEntity = player.GetComponent<Entity>();
         actualEntity = GetComponent<Entity>();
+
+        platformCollider = platform.GetComponent<Collider>();
+
+        soundManager = player.GetComponent<SoundManager>();
     }
 
     void Update()
     {
         if(player == null || actualEntity.isDead) return;
+
+        if (!IsPlayerOnPlatform())
+        {
+            EnemyAnnimator?.SetBool("isMoving", false);
+            soundManager.SetAmbientSound(false);
+            return;
+        }
+
+        soundManager.SetAmbientSound(true);
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
@@ -82,7 +101,19 @@ public class EnemieManager : MonoBehaviour
             AnimatorStateInfo stateInfo = EnemyAnnimator.GetCurrentAnimatorStateInfo(0);
             yield return new WaitForSeconds(stateInfo.length / 2);
 
-            playerEntity.attacked(actualEntity);
+            float distance = Vector3.Distance(transform.position, player.transform.position);
+            if(distance < attackRange)
+            {
+                playerEntity.Attacked(actualEntity);
+            }
         }
+    }
+
+    private bool IsPlayerOnPlatform()
+
+    {
+        if (platformCollider == null) return false;
+        //Check si Player On Plateform
+        return platformCollider.bounds.Contains(player.transform.position);
     }
 }

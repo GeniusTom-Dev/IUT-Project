@@ -1,75 +1,186 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using BUT;
 
 public class PlayerInteraction : MonoBehaviour
 {
 
     [Header("Annimation")]
     [SerializeField]
-    Animator chestAnnimator;
-    [SerializeField]
     Animator playerAnnimator;
+
+    Animator chestAnnimator;
 
 
     [Header("Object")]
     [SerializeField]
     GameObject sword;
-
+    [SerializeField]
+    GameObject key;
+    [SerializeField]
     GameObject startTeleporteur;
+    [SerializeField]
     GameObject endTeleporteur;
+    [SerializeField]
+    GameObject trophy;
+    [SerializeField]
     GameObject chest;
+
+
+
     GameObject player;
     GameObject[] enemies;
 
     Entity playerEntity;
 
+    [Header("Parameters")]
     public float attackRange = 1.5f;
     public float attackCooldown = 4f;
+    public int pieceCount = 0;
+
+    [Header("Parameters")]
+    [SerializeField]
+    public TextMeshProUGUI coinText;
+
     private bool canAttackDueDelay = true;
+    private bool canMoveTrophy = false;
+    private bool teleporterLock = true;
+    private Vector3 trophyTargetPosition;
+
+    private bool isGamePaused = false;
+    private MenuManager menuManager;
+    private SoundManager soundManager;
 
 
     void Awake()
     {
-        startTeleporteur = GameObject.Find("StartTeleporteur");
-        endTeleporteur = GameObject.Find("EndTeleporteur");
-        chest = GameObject.Find("Chest");
         player = GameObject.Find("Player");
         playerEntity = GetComponent<Entity>();
 
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
+        chestAnnimator = chest?.GetComponent<Animator>();
+
+        menuManager = GameObject.Find("Map").GetComponent<MenuManager>();
+
+
+        soundManager = player.GetComponent<SoundManager>();
+
     }
 
-    public void teleport()
+    void Update()
     {
-        float distance = Vector3.Distance(startTeleporteur.transform.position, player.transform.position);
-        if(distance < 0.5)
+        if (canMoveTrophy)
         {
-            player.transform.position = endTeleporteur.transform.position;
+            canMoveTrophy = MoveTrophy();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isGamePaused = !isGamePaused;
+
+            if (isGamePaused)
+            {
+                menuManager.LoadSceneAdditively("PauseMenu");
+            }
+            else
+            {
+                menuManager.UnloadScene("PauseMenu");
+            }
+
         }
     }
-    public void openChest()
+
+    public void Teleport()
+    {
+
+        if(GameObject.Find("StartTeleporteur") == null) return;
+
+        if(teleporterLock && pieceCount >= 3)
+        {
+            teleporterLock = false;
+        }
+
+        if (teleporterLock) return;
+
+
+        float distanceBossTeleporter = Vector3.Distance(startTeleporteur.transform.position, player.transform.position);
+        float distanceWinTeleporter = Vector3.Distance(endTeleporteur.transform.position, player.transform.position);
+        
+        if (distanceBossTeleporter < 1)
+        {
+            player.transform.position = endTeleporteur.transform.position;
+            soundManager.PlayOneTime("teleport");
+        }
+        else if(distanceWinTeleporter < 1)
+        {
+            player.transform.position = startTeleporteur.transform.position;
+            soundManager.PlayOneTime("teleport");
+
+        }
+    }
+    public void OpenChest()
     {
         if (chestAnnimator?.GetBool("isOpen") == true) return;
 
         float distance = Vector3.Distance(chest.transform.position, player.transform.position);
         if (distance < 2)
         {
-            chestAnnimator?.SetBool("isOpen", true);
+            GameObject swordInterface = GameObject.Find("itemSlot2");
+
+            if (swordInterface.transform.Find("Selected")?.gameObject.activeSelf == true)
+            {
+                chestAnnimator?.SetBool("isOpen", true);
+                trophyTargetPosition = new Vector3(trophy.transform.position.x, trophy.transform.position.y + 1, trophy.transform.position.z + 1);
+                StartCoroutine(AnimateTrophyAfterAnnim(3));
+            }
         }
     }
 
-    public void switchSwordState()
+    public void SwitchSwordState()
     {
-        playerAnnimator.Play("Withdrawing Sword");
-        sword.SetActive(!sword.activeSelf);
+        GameObject swordInterface = GameObject.Find("itemSlot1");
 
-        GameObject selectedChild = GameObject.Find("itemSlot1").transform.Find("Selected")?.gameObject;
-        selectedChild?.SetActive(sword.activeSelf);
+        if(swordInterface?.transform.Find("Image")?.gameObject.activeSelf == true)
+        {
+            playerAnnimator.Play("Withdrawing Sword");
+            soundManager.PlayOneTime("SwordState");
+            sword.SetActive(!sword.activeSelf);
+
+            if (key.activeSelf)
+            {
+                key.SetActive(false);
+            }
+
+            GameObject selectedChild = swordInterface.transform.Find("Selected")?.gameObject;
+            selectedChild?.SetActive(sword.activeSelf);
+        }
+        
     }
 
-    public void attack()
+    public void SwitchKeyState()
+    {
+        GameObject keyInterface = GameObject.Find("itemSlot2");
+
+        if(keyInterface?.transform.Find("Image")?.gameObject.activeSelf == true)
+        {
+            playerAnnimator.Play("Withdrawing Sword");
+            key.SetActive(!key.activeSelf);
+
+            if (sword.activeSelf)
+            {
+                sword.SetActive(false);
+            }
+
+            GameObject selectedChild = keyInterface.transform.Find("Selected")?.gameObject;
+            selectedChild?.SetActive(key.activeSelf);
+        }
+        
+    }
+
+    public void Attack()
     {
         if (sword.activeSelf == false || canAttackDueDelay == false) return;
 
@@ -77,6 +188,7 @@ public class PlayerInteraction : MonoBehaviour
 
         canAttackDueDelay = false;
         playerAnnimator.Play("Standing Melee Attack Horizontal");
+        StartCoroutine(PlayerSoundAttackDelay(.8f));
 
         foreach (GameObject enemy in enemies)
         {
@@ -86,17 +198,51 @@ public class PlayerInteraction : MonoBehaviour
 
             if (enemyEntity != null && distance < attackRange)
             {
-                enemyEntity.attacked(playerEntity);
+                enemyEntity.Attacked(playerEntity);
             }
         }
 
-        StartCoroutine(resetAllowAttackDelay());
+        StartCoroutine(ResetAllowAttackDelay());
     }
 
-    private IEnumerator resetAllowAttackDelay()
+    private IEnumerator ResetAllowAttackDelay()
     {
         yield return new WaitForSeconds(attackCooldown);
-        Debug.Log("Auth reset");
         canAttackDueDelay = true;
+    }
+
+    private IEnumerator AnimateTrophyAfterAnnim(float animationDuration)
+    {
+        yield return new WaitForSeconds(animationDuration);
+        canMoveTrophy = true;
+    }
+
+    private IEnumerator PlayerSoundAttackDelay(float delayDuration)
+    {
+        yield return new WaitForSeconds(delayDuration);
+        soundManager.PlayOneTime("SwordSlash");
+    }
+
+    private bool MoveTrophy()
+    {
+
+        if (trophy == null) return false;
+
+        Vector3 direction = (trophyTargetPosition - trophy.transform.position).normalized;
+
+        trophy.transform.position += direction * Time.deltaTime;
+
+        if(trophy.transform.position == trophyTargetPosition)
+        {
+            return false;
+        }
+        
+        return true;
+    }
+
+    public void AddPiece()
+    {
+        pieceCount++;
+        coinText.text = pieceCount.ToString();
     }
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Coin
+  - Sword
+  - Key
+  - Trophee
   layers:
   - Default
   - TransparentFX

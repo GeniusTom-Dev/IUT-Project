@@ -92,7 +92,7 @@ public class WaterCube : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("enter: " + other.name + " tag: " + other.tag);
-		other.GetComponent<Entity>().die();
+		other.GetComponent<Entity>().Die();
     }
 }
 

@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: besi
-    second: {fileID: 2100000, guid: 5c50e1f7a236dfb4da56ffd6bb726bff, type: 2}
+    second: {fileID: 2100000, guid: 3c2d848b155770e4cb8471b4f9520669, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: haisan
-    second: {fileID: 2100000, guid: 288e4392271044b4f808b2c0f5e59f4a, type: 2}
+    second: {fileID: 2100000, guid: 0ace35f4d583d9142b3f5e9074ab74b8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: pegangan
-    second: {fileID: 2100000, guid: 41828194f04bff94fbdbe4e05998a644, type: 2}
+    second: {fileID: 2100000, guid: 619f71929d629bf4fa3b1685e4f7a065, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: pegangan m2
-    second: {fileID: 2100000, guid: d6c510e75f8ee9d41ba3450b4a02eef2, type: 2}
+    second: {fileID: 2100000, guid: ab0a2b05a5aca5649a1def280a64b611, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

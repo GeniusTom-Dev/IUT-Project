@@ -1,3 +1,4 @@
+using BUT;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,12 @@ public class Entity : MonoBehaviour
     public int damage = 10;
     public bool isDead = false;
 
-    public void attacked(Entity opponent)
+    public GameObject item;
+    private bool asAlreadyDropItem = false;
+    public GameObject teleporter;
+    private bool asAlreadyActiveTeleporter = false;
+
+    public void Attacked(Entity opponent)
     {
         if (opponent == null) return;
 
@@ -26,32 +32,60 @@ public class Entity : MonoBehaviour
             GameObject.Find("healthBar").GetComponent<HealthBar>().SetHealth(health);
         }
 
-            Debug.Log(gameObject.name + " : vie restante: " + health + " pv");
-
         if (health == 0)
         {
-            die();
+            Die();
         }
     }
 
-    public void die()
+    public void Die()
     {
         isDead = true;
         m_Animator.Play("Falling Back Death");
+        SoundManager soundManager = GameObject.Find("Player").GetComponent<SoundManager>();
+        soundManager.PlayOneTime("death");
 
-        if(this.name == "Player")
+
+        DropItem();
+        ActiveTeleporter();
+
+        if (this.name == "Player")
         {
             AnimatorStateInfo stateInfo = m_Animator.GetCurrentAnimatorStateInfo(0);
-            StartCoroutine(ChangeSceneAfterDeath(stateInfo.length));
+            StartCoroutine(ChangeSceneAfterDeath(2));
         }
-
 
     }
 
-    private IEnumerator ChangeSceneAfterDeath(float attackCooldown)
+    private IEnumerator ChangeSceneAfterDeath(float cooldown)
     {
-        yield return new WaitForSeconds(attackCooldown);
-        MenuManager menuManager = new MenuManager();
-        menuManager.ChangeScene("deathMenu");
+        yield return new WaitForSeconds(cooldown);
+        GameObject player = GameObject.Find("Player");
+        MenuManager menuManager = player.AddComponent<MenuManager>();
+        menuManager.ChangeScene("DeathMenu");
+    }
+
+    private void DropItem()
+    {
+        if (isDead == false || asAlreadyDropItem == true || item == null) return;
+
+        GameObject droppedItem = Instantiate(
+            item,
+            new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z),
+            Quaternion.identity);
+        droppedItem.name = item.name;
+        droppedItem.tag = item.tag;
+        
+        asAlreadyDropItem = true;
+    }
+
+    private void ActiveTeleporter()
+    {
+        if (isDead == false || asAlreadyActiveTeleporter == true || teleporter == null) return;
+
+        if(teleporter.activeSelf == false)
+        {
+            teleporter.SetActive(true);
+        }
     }
 }

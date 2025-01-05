@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\tomev\\Unity\\IUT Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\scripts\\personal\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|C:\\Users\\tomev\\Unity\\IUT Project\\assets\\but project\\scripts\\personal\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\scripts\\personal\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|c:\\users\\tomev\\unity\\iut project\\assets\\but project\\a bouger\\healthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B72F3C-7273-2795-0A20-1327FF552BB4}|Assembly-CSharp.csproj|solutionrelative:assets\\but project\\a bouger\\healthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerInteraction.cs",
-              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
-              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
-              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
-              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\PlayerInteraction.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAADgv0QAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T16:52:53.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HealthBarController.cs",
-              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\a bouger\\HealthBarController.cs",
-              "RelativeDocumentMoniker": "Assets\\BUT Project\\a bouger\\HealthBarController.cs",
-              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\a bouger\\HealthBarController.cs",
-              "RelativeToolTip": "Assets\\BUT Project\\a bouger\\HealthBarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T16:35:22.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
-              "RelativeDocumentMoniker": "Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
-              "ToolTip": "C:\\Users\\tomev\\Unity\\IUT Project\\Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
-              "RelativeToolTip": "Assets\\BUT Project\\Scripts\\Personal\\Entity.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T20:30:33.681Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
